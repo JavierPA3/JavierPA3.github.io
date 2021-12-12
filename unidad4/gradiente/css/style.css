@@ -1,0 +1,28 @@
+.myclass {
+    text-align: center;
+    font-size: 5vw;
+    padding: 10vw;
+    border:solid;
+    background: repeating-radial-gradient(grey 20%, white 40%);
+}
+.myclasss {
+    text-align: center;
+    font-size: 5vw;
+    padding: 10vw;
+    border:solid;
+    background: repeating-radial-gradient(red 20%, blue 40%, green 40%);
+}
+img {
+    animation: myAnimation  2s ease 1s 3 alternate forwards;
+    width: 200px;
+    display: block;
+    filter: grayscale(1)
+
+}
+@keyframes myAnimation {
+100% {
+    transform: rotate(10000000000000000000deg);
+}
+
+
+}

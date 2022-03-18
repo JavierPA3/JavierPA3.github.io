@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+        'cabecera cabecera cabecera cabecera cabecera cabecera'
+        'izquierda centro centro centro centro derecha'
+        'pie pie pie pie pie pie';
+    background-color: rgb(170, 110, 110);
+}
+.cabecera{
+    grid-area: cabecera;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 10vh;
+    border-bottom: solid 4px burlywood;
+    background-color: rgb(170, 110, 110);
+}
+.cabecera h1{
+    margin: 0px 50px;
+    
+}
+.izquierda{
+    grid-area: izquierda;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 30px;
+    border-bottom: solid 4px burlywood;
+    border-right: solid 4px burlywood;
+    background-color: blanchedalmond;
+}
+.izquierda a{
+    border: solid 3px cadetblue;
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    color: cadetblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 2px 3px lightsalmons;
+}
+.centro{
+    grid-area: centro;
+    display: flex;
+    flex-flow: column;
+    border-bottom: solid 4px burlywood;
+    background-color: #dcedc8;
+}
+article{
+    margin: 15px;
+}
+article h2{
+    margin: 15px;
+}
+.centro p{
+    text-align: justify;
+}
+.derecha{
+    grid-area: derecha;
+    display: flex;
+    flex-flow: column;
+    border-bottom: solid 4px burlywood;
+    border-left: solid 4px burlywood;
+    background-color: #dcedc8;
+}
+.derecha h2{
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid 4px rgb(170, 110, 110);
+}
+.derecha h3{
+    padding: 10px;
+    text-align: center;
+}
+.derecha p{
+    padding: 10px;
+    text-align: center;
+}
+.derecha a{
+    padding: 10px;
+    text-align: center;
+}
+.pie{
+    grid-area: pie;
+    display: flex;
+    flex-flow: row;
+    background-color: rgb(170, 110, 110);
+    align-items: center;
+    height: 100px;
+}
+.pie a{
+    margin: 0px 40px
+}
+.pie p{
+    margin: 0px 40px
+}
+
+@media (max-width: 1000px) {
+  body {
+    grid-template-areas: 
+        'cabecera cabecera cabecera cabecera cabecera cabecera'
+        'izquierda centro centro centro centro centro'
+        'derecha derecha derecha derecha derecha derecha'
+        'pie pie pie pie pie pie';
+  }
+    .derecha{
+    flex-flow: column;
+    border-left: solid 0px rgb(170, 110, 110);
+}
+}
+@media (max-width: 800px) {
+  body {
+    grid-template-areas: 
+        'cabecera cabecera cabecera cabecera cabecera cabecera'
+        'izquierda izquierda izquierda izquierda izquierda izquierda'
+        'centro centro centro centro centro centro'
+        'derecha derecha derecha derecha derecha derecha'
+        'pie pie pie pie pie pie';
+  }
+    .izquierda{
+    flex-flow: row;
+    border-right: solid 0px rgb(170, 110, 110);
+}
+    .izquierda a{
+    margin: 10px;
+    text-align: center;
+}
+}

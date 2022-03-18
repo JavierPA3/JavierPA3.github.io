@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    
+<style>
+
+    @media (min-width: 969px){
+      
+    
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    align-items: top;
+    top: -5%;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.barra{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.parte2{
+    position: absolute;
+   
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+}
+
+.menu {
+    position:absolute;
+    left: 5%;  
+    top: 10%;
+    transform: translate(-50%, -50%);
+font-size: 15px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body { font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: monaco, Consolas, "Lucida Console", monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+.imagenperso {
+    -webkit-filter: saturate(150%) hue-rotate(45deg) blur(1px);
+filter: saturate(150%) hue-rotate(45deg) blur(1px);
+
+}
+
+.cat {
+    position: absolute;
+    left: 31%;
+    top: 65%;
+}
+
+.cat1 {
+    position: absolute;
+    left: 42%;
+    top: 57%;
+    font-family: fantasy;
+    font-size: 25px;
+    color: coral;
+}
+.barra2 {
+    position: absolute;
+    left: 35%;
+    top: 63%;
+    width: 500px;
+        height: 1px;
+        color: red;
+
+}
+
+.barra3 {
+    position: absolute;
+    left: 25%;
+    top: 120%;
+    width: 1000px;
+        height: 1px;
+        color: red;
+
+}
+
+.wikipedia {
+    position: absolute;
+    left: 15%;
+    top: 80%;
+    font-size: 18px;
+    color: chocolate;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.definicion {
+    position: absolute;
+    left: 17%;
+    top: 75%;
+    font-size: 18px;
+    color: brown;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.imgwiki {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    height: 350px;
+
+}
+
+
+.button {
+    position: absolute;
+    left: 19%;
+    top: 102%;
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: orange;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  position: absolute;
+  top: 143%;
+  left: 13%;
+}
+
+.button2 {
+    position: absolute;
+    left: 11%;
+    top: 91%;
+    display: block;
+    width: 280px;
+    height: 25px;
+    background: lightyellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: lightcoral;
+    color: black;
+    border-width: 1px;
+    border-style: solid ;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  top: 143%;
+  left: 40%;
+}
+
+.button3 {
+    position: absolute;
+    left: 11%;
+    top: 91%;
+    display: block;
+    width: 280px;
+    height: 25px;
+    background: lightyellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: lightcoral;
+    color: black;
+    border-width: 1px;
+    border-style: solid ;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+.card4 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  top: 143%;
+  left: 67%;
+}
+
+.button4 {
+    position: absolute;
+    left: 11%;
+    top: 91%;
+    display: block;
+    width: 280px;
+    height: 25px;
+    background: lightyellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: lightcoral;
+    color: black;
+    border-width: 1px;
+    border-style: solid ;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+
+.card5 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  top: 210%;
+  left: 13%;
+}
+
+.button5 {
+    position: absolute;
+    left: 11%;
+    top: 91%;
+    display: block;
+    width: 280px;
+    height: 25px;
+    background: lightyellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: lightcoral;
+    color: black;
+    border-width: 1px;
+    border-style: solid ;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.card6 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  top: 210%;
+  left: 40%;
+}
+
+.button6 {
+    position: absolute;
+    left: 11%;
+    top: 91%;
+    display: block;
+    width: 280px;
+    height: 25px;
+    background: lightyellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: lightcoral;
+    color: black;
+    border-width: 1px;
+    border-style: solid ;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.card7 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  top: 210%;
+  left: 67%;
+}
+
+.button7 {
+    position: absolute;
+    left: 11%;
+    top: 91%;
+    display: block;
+    width: 280px;
+    height: 25px;
+    background: lightyellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: lightcoral;
+    color: black;
+    border-width: 1px;
+    border-style: solid ;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.card8 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0%;
+  left: 150%;
+}
+
+.button8 {
+    position: absolute;
+    left: 11%;
+    top: 91%;
+    display: block;
+    width: 280px;
+    height: 25px;
+    background: lightyellow;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: lightcoral;
+    color: black;
+    border-width: 1px;
+    border-style: solid ;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+
+.footerr {
+    position: absolute;
+    top: 275%;
+    background-color: #A74862;
+    color: black;
+}
+}
+
+
+</style>
+
+</head>
+<body>
+    <div class="contenedor">
+
+        <img src="header1234.webp" class="imagenperso"/>
+        <div class="centrado" style="color: black; font-style: monaco;">Página web de Javier Postigo arévalo</div>
+        <div class="barra" style="color: white; font-style: monaco;"><hr width=600></div>
+        <div class="img" style="color: black; font-style: monaco;">Bienvenido a mi página web, soy Javier Postigo Arévalo, un estudiante del ciclo superior de diseño de aplicaciones web en el Ies Gran Capitán.</div>
+    
+    </div>
+       </div> 
+    </div>
+      </div>
+      <div>
+          <P class="cat1">Sobre esta página web</P>
+
+         
+          <p class="cat">En esta web publicaré todas mis actividades realizadas en el módulo de Lenguaje de Marcas.</p>
+                    <hr class="barra2" style="height:2px;border-width:0;color:gray;background-color:coral">
+            <p class="definicion">Definición de lenguaje de marcas:</p>
+          <pre class="wikipedia">
+            Un lenguaje de marcado o lenguaje de 
+            marcas es una forma de codificar un documento que, 
+            junto con el texto, incorpora etiquetas 
+            o marcas que contienen información 
+            adicional acerca de la estructura 
+            del texto o su presentación.
+            El lenguaje de marcas más extendido 
+            es el HTML, fundamento del World Wide Web. 
+          </pre>
+          <img src="wiki.jpg" class="imgwiki">
+          <a class="button" href="https://es.wikipedia.org/wiki/Lenguaje_de_marcado" target="_blank">Wikipedia</a>
+        </div>
+
+        <div>
+
+        <hr class="barra3" style="height:4px;border-width:0;color:gray;background-color: #EBAC57">
+        <div>
+
+
+       
+        <div class="card">
+            <img src="lenguaje.jpg" alt="unidad1" style="width:400px">
+            <div class="container3">
+              <h4><b>Unidad 1</b></h4><pre style="font-family: monaco; color:#EBAC57; font-size: 15px;">Aquí encontraremos las unidades asociadas a la unidad 1.
+
+
+            </pre>
+                <a class="button2" href="unidad1/1.html" target="_blank">Enlace a la unidad 1</a>
+            </div>
+        </div>
+            <div class="card3">
+                <img src="bootstrap-5.1.3-examples/album/abuela.png" alt="" style="width:400px">
+                <div class="container">
+                  <h4><b>Recetas de la abuela</b></h4><pre style="font-family: monaco; color:#EBAC57; font-size: 15px;">Aquí encontraremos el proyecto de la receta de la abuela.
+    
+    
+                </pre>
+                    <a class="button3" href="bootstrap-5.1.3-examples/album/index.html" target="_blank">Enlace a la receta</a>
+                </div>
+        </div>
+         
+        <div class="card4">
+            <img src="html.png" alt="" style="width:400px">
+            <div class="container">
+              <h4><b>Unidad 3</b></h4><pre style="font-family: monaco; color:#EBAC57; font-size: 15px;">Aquí encontraremos las actividades asociadas a la unidad 3.
+
+
+            </pre>
+                <a class="button4" href="Unidad3/3.html" target="_blank">Enlace a la unidad 3</a>
+            </div>
+    </div>
+
+    <div class="card5">
+        <img src="imgcss.png" alt="" style="width:400px">
+        <div class="container">
+          <h4><b>Unidad 4</b></h4><pre style="font-family: monaco; color:#EBAC57; font-size: 15px;">Aquí encontraremos las actividades asociadas a la unidad 4.
+
+
+        </pre>
+            <a class="button4" href="unidad4/unidad4.html" target="_blank">Enlace a la unidad 3</a>
+        </div>
+</div>
+
+<div class="card6">
+    <img src="htmlcss.png" alt="" style="width:400px">
+    <div class="container">
+      <h4><b>Unidad 5</b></h4><pre style="font-family: monaco; color:#EBAC57; font-size: 15px;">Aquí encontraremos las actividades asociadas a la unidad 4.
+
+
+    </pre>
+        <a class="button4" href="unidad5/5.html" target="_blank">Enlace a la unidad 4</a>
+    </div>
+</div>
+
+<div class="card7">
+    <img src="cordoba.png" alt="" style="width:400px">
+    <div class="container">
+      <h4><b>Córdoba patrimonio</b></h4><pre style="font-family: monaco; color:#EBAC57; font-size: 15px;">Aquí guardaré los proyectos como cordoba patrimonio.
+
+
+    </pre>
+        <a class="button4" href="clase/index.html" target="_blank">Proyectos</a>
+    </div>
+</div>
+       
+<pre class="footerr">
+                                                                                                                                                                                                                                                                                                    
+    © Javier Postigo Arévalo · 2021-2022                                                                                 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+</pre>
+</body>
+</html>

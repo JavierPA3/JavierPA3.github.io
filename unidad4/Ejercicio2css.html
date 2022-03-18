@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores por atributos</title>
+    <style>
+    p[name]{background-color:red;}
+    p[name="p2"]{background-color: yellow;}
+    p[name^=p3]{background-color: red;}
+    p[name$=p4]{background-color: red;}
+    p[name*=p5]{background-color: yellow;}
+    p[name~=p6]{background-color: purple;}
+    </style>
+</head>
+<body>
+    <h1>Ejemplo seletores 1</h1>
+    <p name>p1</p>
+
+    <p name="p2">
+ p2
+    </p>
+
+    <p name="p3">
+p3
+    </p>
+
+<pre>
+
+
+
+
+
+</pre>
+    <p name="p4">
+        p4
+            </p>
+
+  <p name="p5">
+p5
+    </p>
+    <p name="p6">
+        p6
+            </p>
+</body>
+</html>

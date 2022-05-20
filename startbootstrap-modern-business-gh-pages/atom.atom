@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>XML Atom Channel Javier Postigo Arévalo LM</title>
+  <link href="https://javierpa3.github.io"/>
+  <updated>2022-04-01T12:20:20Z</updated>
+  <author>
+    <name>Javier Postigo Arévalo</name>
+  </author>
+  <id>https://javierpa3.github.io</id>
+
+  <entry>
+    <title>Ejercicio 1 </title>
+    <link href="https://javierpa3.github.io/unidad6/PostigoJavier_ej1/PostigoJavier_ej1.xml"/>
+    <id>https://javierpa3.github.io/unidad6/PostigoJavier_ej1/PostigoJavier_ej1.xml</id>
+    <updated>2022-04-01T12:22:22Z</updated>
+    <summary>Ejercicio 1</summary>
+  </entry>
+  <entry>
+    <title>Ejercicio 2</title>
+    <link href="https://javierpa3.github.io/unidad6/PostigoJavier_ej2/PostigoJavier_ej2.xml"/>
+    <id>https://javierpa3.github.io/unidad6/PostigoJavier_ej2/PostigoJavier_ej2.xml</id>
+    <updated>2022-04-01T12:23:00Z</updated>
+    <summary>Ejercicio 2 </summary>
+  </entry>
+  <entry>
+    <title>Ejercicio 3</title>
+    <link href="https://javierpa3.github.io/unidad6/PostigoJavier_ej3/PostigoJavier_ej3.xml"/>
+    <id>https://javierpa3.github.io/unidad6/PostigoJavier_ej2/PostigoJavier_ej2.xml</id>
+    <updated>2022-04-01T12:23:03Z</updated>
+    <summary>Ejercicio 3</summary>
+  </entry>
+  
+</feed>

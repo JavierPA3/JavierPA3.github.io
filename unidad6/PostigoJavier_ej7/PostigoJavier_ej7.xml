@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<inmobiliaria    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="PostigoJavier_ej7.xsd"> 
+
+<agencias>
+    <agencia id="23">
+        <correo_electronico>a21poarja@iesgrancapitan.org</correo_electronico>
+        <nombre>Agencia Javier</nombre>
+        <telefono>624 50 41 49</telefono>
+    </agencia>
+
+
+</agencias>
+
+<propietarios>
+
+    <propietario id="24">
+        <nombre>Javier</nombre>
+
+    </propietario>    
+</propietarios>
+
+<propiedades>
+    <propiedad id="45">
+        <nombre>Pisos Javier</nombre>
+        <num_pisos>151</num_pisos>
+        <propietario_perteneciente>
+            <id>24</id>
+            <nombre>Javier</nombre>
+        </propietario_perteneciente>
+    </propiedad>
+
+</propiedades>
+
+<pisos>
+    <piso id="F51">
+        <nombre>PisoGrande</nombre>
+        <descripcion>Piso de 500 metros cuadrados, con piscina.</descripcion>
+        <precio>5000000</precio>
+        <fecha_alta>2022-05-14</fecha_alta>
+        <calidad>A</calidad>
+        <propiedad_perteneciente>
+            <id>   45 </id>
+            <nombre> Casa Javier </nombre>
+        </propiedad_perteneciente>
+
+    </piso>
+
+</pisos>
+</inmobiliaria>

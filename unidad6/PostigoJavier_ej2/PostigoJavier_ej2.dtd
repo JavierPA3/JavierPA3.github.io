@@ -1,0 +1,18 @@
+
+<!ELEMENT sistema_sanitario (hospitales,medicos,pacientes)>
+<!ELEMENT hospitales (nombre,ubicacion)>
+<!ATTLIST hospitales id NMTOKEN #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+<!ELEMENT medicos (nombre,dni,apellido,domicilio)>
+<!ATTLIST medicos id NMTOKEN #REQUIRED>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT domicilio (#PCDATA)>
+<!ELEMENT pacientes (fecha_nacimiento,nombre,apellido,informacion_ingresos)>
+<!ATTLIST pacientes id NMTOKEN #REQUIRED>
+<!ELEMENT fecha_nacimiento (#PCDATA)>
+<!ELEMENT informacion_ingresos (fecha,fecha_alta,motivo)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT fecha_alta (#PCDATA)>
+<!ELEMENT motivo (#PCDATA)>

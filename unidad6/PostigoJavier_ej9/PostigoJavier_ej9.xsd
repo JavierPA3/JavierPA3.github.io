@@ -1,0 +1,101 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="inmobiliaria" type="inmobiliariaType"/>
+  <xs:complexType name="direccionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="calle"/>
+      <xs:element type="xs:short" name="codigo_postal"/>
+      <xs:element type="xs:string" name="ciudad"/>
+      <xs:element type="xs:string" name="pais"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agenciaType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="correo_electronico"/>
+      <xs:element type="xs:string" name="nombre"/>
+      <xs:element type="xs:string" name="telefono"/>
+      <xs:element type="direccionType" name="direccion"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="agenciasType">
+    <xs:sequence>
+      <xs:element type="agenciaType" name="agencia"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="propietarioType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nombre"/>
+      <xs:element type="direccionType" name="direccion"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="propietariosType">
+    <xs:sequence>
+      <xs:element type="propietarioType" name="propietario"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="categoriasType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="seguridad"/>
+      <xs:element type="xs:string" name="equipamiento"/>
+      <xs:element type="xs:string" name="ubicacion"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="caracteristicasType">
+    <xs:sequence>
+      <xs:element type="categoriasType" name="categorias"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="propietario_pertenecienteType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="id"/>
+      <xs:element type="xs:string" name="nombre"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="propiedadType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nombre"/>
+      <xs:element type="xs:short" name="num_pisos"/>
+      <xs:element type="caracteristicasType" name="caracteristicas"/>
+      <xs:element type="propietario_pertenecienteType" name="propietario_perteneciente"/>
+      <xs:element type="direccionType" name="direccion"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="propiedadesType">
+    <xs:sequence>
+      <xs:element type="propiedadType" name="propiedad"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="propiedad_pertenecienteType">
+    <xs:sequence>
+      <xs:element type="xs:float" name="id"/>
+      <xs:element type="xs:string" name="nombre"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="pisoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nombre"/>
+      <xs:element type="xs:string" name="descripcion"/>
+      <xs:element type="xs:int" name="precio"/>
+      <xs:element type="xs:date" name="fecha_alta"/>
+      <xs:element type="xs:string" name="calidad"/>
+      <xs:element type="caracteristicasType" name="caracteristicas"/>
+      <xs:element type="propiedad_pertenecienteType" name="propiedad_perteneciente"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="pisosType">
+    <xs:sequence>
+      <xs:element type="pisoType" name="piso"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inmobiliariaType">
+    <xs:sequence>
+      <xs:element type="agenciasType" name="agencias"/>
+      <xs:element type="propietariosType" name="propietarios"/>
+      <xs:element type="propiedadesType" name="propiedades"/>
+      <xs:element type="pisosType" name="pisos"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

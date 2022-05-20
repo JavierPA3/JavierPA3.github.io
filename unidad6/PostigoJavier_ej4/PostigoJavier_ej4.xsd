@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="inmobiliaria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="agencias" type="xs:string" />
+                <xs:element name="propietarios" type="xs:string" />
+                <xs:element name="propiedades" type="xs:string" />
+                <xs:element name="pisos" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

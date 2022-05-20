@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<sistema_sanitario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="PostigoJavier_ej3.xsd">
+    <hospitales id="3">
+    <nombre>Reina Sofia</nombre>
+    <ubicacion>Avenida de la arruzafilla</ubicacion>
+    </hospitales>
+
+    <medicos id="423">
+        <nombre>Jose Miguel</nombre>
+        <dni>49505032W</dni>
+        <apellido>Torres</apellido>
+        <domicilio>Calle Pintor Zurbarán</domicilio>
+    </medicos>
+
+    <pacientes id="953">
+        <fecha_nacimiento>2003-05-26</fecha_nacimiento>
+        <nombre>Javier</nombre>
+        <apellido>Postigo Arévalo</apellido>
+        <informacion_ingresos>
+           <fecha>2022-05-15</fecha>
+           <fecha_alta>2022-05-15</fecha_alta>
+           <motivo>Apendicitis</motivo>
+        </informacion_ingresos>
+    </pacientes>
+
+</sistema_sanitario>

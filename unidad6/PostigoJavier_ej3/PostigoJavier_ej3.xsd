@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="sistema_sanitario" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hospitales" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="ubicacion" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="medicos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="dni" type="xs:string" />
+                            <xs:element name="apellido" type="xs:string" />
+                            <xs:element name="domicilio" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="pacientes">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fecha_nacimiento" type="xs:date" />
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="apellido" type="xs:string" />
+                            <xs:element name="informacion_ingresos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="fecha" type="xs:date" />
+                                        <xs:element name="fecha_alta" type="xs:date" />
+                                        <xs:element name="motivo" type="xs:string" />
+                                        
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informatica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="Ejercicio2xml.xsd">
+
+    <cursos>
+        <curso grado="1">
+            <horario>
+              <lunes>
+                  <primera>Programación</primera>
+                  <segunda>Programación</segunda>
+                  <tercera>Lenguaje de marcas</tercera>
+                  <cuarta>Lenguaje de marcas </cuarta>
+                  <quinta>Base de datos </quinta>
+                  <sexta>Base de datos </sexta>
+              </lunes>
+              <martes>
+                  <primera>Entornos de desarrollo</primera>
+                  <segunda>Sistemas informáticos</segunda>
+                  <tercera>Sistemas informáticos</tercera>
+                  <cuarta>Sistemas informáticos</cuarta>
+                  <quinta>Programación</quinta>
+                  <sexta>Programación</sexta>
+              </martes>
+              <miercoles>
+                  <primera>Programación</primera>
+                  <segunda>Programación</segunda>
+                  <tercera>Base de datos</tercera>
+                  <cuarta>Base de datos</cuarta>
+                  <quinta>FOL</quinta>
+                  <sexta>FOL</sexta>
+              </miercoles>
+              <jueves>
+              <primera>Entornos de desarrollo</primera>
+                  <segunda>Entornos de desarrollo</segunda>
+                  <tercera>Sistemas informáticos</tercera>
+                  <cuarta>Sistemas informáticos</cuarta>
+                  <quinta>Sistemas informáticos</quinta>
+                  <sexta>FOL</sexta>
+              </jueves>
+              <viernes>
+              <primera>Base de datos</primera>
+                  <segunda>Base de datos</segunda>
+                  <tercera>Lenguaje de marcas</tercera>
+                  <cuarta>Lenguaje de marcas</cuarta>
+                  <quinta>Programación</quinta>
+                  <sexta>Programación</sexta>
+              </viernes>
+            </horario>
+        </curso>
+         <curso grado="2">
+            <horario>
+              <lunes>
+                  <primera>Base de datos</primera>
+                  <segunda>Base de datos</segunda>
+                  <tercera>Lenguaje de marcas</tercera>
+                  <cuarta>Lenguaje de marcas</cuarta>
+                  <quinta>Programación</quinta>
+                  <sexta>Programación</sexta>
+              </lunes>
+              <martes>
+              <primera>Entornos de desarrollo</primera>
+                  <segunda>Entornos de desarrollo</segunda>
+                  <tercera>Sistemas informáticos</tercera>
+                  <cuarta>Sistemas informáticos</cuarta>
+                  <quinta>Sistemas informáticos</quinta>
+                  <sexta>FOL</sexta>
+              </martes>
+              <miercoles>
+              <primera>FOL</primera>
+                  <segunda>FOL</segunda>
+                  <tercera>Base de datos</tercera>
+                  <cuarta>Base de datos</cuarta>
+                  <quinta>Programación</quinta>
+                  <sexta>Programación</sexta>
+              </miercoles>
+              <jueves>
+              <primera>Entornos de desarrollo</primera>
+                  <segunda>Sistemas informáticos</segunda>
+                  <tercera>Sistemas informáticos</tercera>
+                  <cuarta>Sistemas informáticos</cuarta>
+                  <quinta>Programación</quinta>
+                  <sexta>Programación</sexta>
+              </jueves>
+              <viernes>
+              <primera></primera>
+                  <segunda>Programación</segunda>
+                  <tercera>Programación</tercera>
+                  <cuarta>Base de datos</cuarta>
+                  <quinta>Base de datos</quinta>
+                  <sexta>FOL</sexta>
+              </viernes>
+            </horario>
+        </curso>
+    </cursos>
+    </informatica>

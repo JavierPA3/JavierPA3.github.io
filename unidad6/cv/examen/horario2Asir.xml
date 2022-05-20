@@ -1,0 +1,46 @@
+<?xml-stylesheet href="asir.xsl" type="text/xsl"?>
+
+<curso grado="2">
+    <horario>
+      <lunes>
+          <primera>Base de datos</primera>
+          <segunda>Base de datos</segunda>
+          <tercera>Lenguaje de marcas</tercera>
+          <cuarta>Lenguaje de marcas</cuarta>
+          <quinta>Programación</quinta>
+          <sexta>Programación</sexta>
+      </lunes>
+      <martes>
+      <primera>Entornos de desarrollo</primera>
+          <segunda>Entornos de desarrollo</segunda>
+          <tercera>Sistemas informáticos</tercera>
+          <cuarta>Sistemas informáticos</cuarta>
+          <quinta>Sistemas informáticos</quinta>
+          <sexta>FOL</sexta>
+      </martes>
+      <miercoles>
+      <primera>FOL</primera>
+          <segunda>FOL</segunda>
+          <tercera>Base de datos</tercera>
+          <cuarta>Base de datos</cuarta>
+          <quinta>Programación</quinta>
+          <sexta>Programación</sexta>
+      </miercoles>
+      <jueves>
+      <primera>Entornos de desarrollo</primera>
+          <segunda>Sistemas informáticos</segunda>
+          <tercera>Sistemas informáticos</tercera>
+          <cuarta>Sistemas informáticos</cuarta>
+          <quinta>Programación</quinta>
+          <sexta>Programación</sexta>
+      </jueves>
+      <viernes>
+      <primera>Entornos de desarrollo</primera>
+          <segunda>Programación</segunda>
+          <tercera>Programación</tercera>
+          <cuarta>Base de datos</cuarta>
+          <quinta>Base de datos</quinta>
+          <sexta>FOL</sexta>
+      </viernes>
+    </horario>
+</curso>
